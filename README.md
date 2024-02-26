@@ -1,6 +1,6 @@
-# README - Travail Pratique Noté
+# README - TP
 
-Ce README fournit des instructions pour démarrer le travail pratique noté, comprenant à la fois le backend de l'API et le frontend de l'application.
+Ce README fournit des instructions pour démarrer le TP noté, comprenant à la fois le backend de l'API et le frontend de l'application.
 
 ## Backend - API :
 
