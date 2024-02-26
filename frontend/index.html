@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500;1,600&family=Poppins&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">FACTURES</h1>
+            <button class="btn btn--purple btn--create">Créer une facture</button>
+        </header>
+        <div class="main">
+            <div class="invoices">
+                <!-- LISTE DES FACTURES -->
+                <div class="invoice-item">
+                    <div class="invoice-item__id">FACT2024001</div>
+                    <div class="invoice-item__client">Jensen Huang</div>
+                    <div class="invoice-item__amount">4025.00€</div>
+                    <div class="invoice__status invoice__status--paid">Payée</div>
+                </div>
+                <div class="invoice-item">
+                    <div class="invoice-item__id">FACT2024002</div>
+                    <div class="invoice-item__client">Alex Grim</div>
+                    <div class="invoice-item__amount">556.00€</div>
+                    <div class="invoice__status invoice__status--pending">En attente</div>
+                </div>
+                <div class="invoice-item">
+                    <div class="invoice-item__id">FACT2024003</div>
+                    <div class="invoice-item__client">John Morrison</div>
+                    <div class="invoice-item__amount">1430.00€</div>
+                    <div class="invoice__status invoice__status--paid">Payée</div>
+                </div>
+            </div>
+
+            <!-- C'EST DANS CETTE DIV QUE DOIT S'AFFICHER LES DETAILS DE LA FACTURE OU LE FORMULAIRE LORQU'ON CLIQUE SUR LE BOUTON CREER UNE FACTURE -->
+            <div class="right-block">
+
+                <!-- DETAIL DE LA FACTURE -->
+                <div class="invoice">
+                    <div class="invoice__actions">
+                        <div class="status">
+                            <div class="invoice__subtitle">Statut</div>
+                            <div class="invoice__status invoice__status--paid">Payée</div>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn--red btn--delete">Supprimer</button>
+                            <button class="btn btn--purple btn--edit">Indiquée payée</button>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="invoice__header">
+                            <div class="text-30-b">FACT2024001</div>
+                            <div class="invoice__title">Création d'un site e-commerce</div>
+                        </div>
+                        <div class="invoice__infos">
+                            <div class="invoice__infos--client">
+                                <div class="invoice__subtitle">Client</div>
+                                <div class="invoice__client bold">Jensen Huand</div>
+                                <div class="invoice__email bold">jensengrim@email.com</div>
+                            </div>
+                            <div class="invoice__dates">
+                                <div>
+                                    <div class="invoice__subtitle">Date de la facture</div>
+                                    <div class="invoice__date bold">15 Janvier 2024</div>
+                                </div>
+                                <div>
+                                    <div class="invoice__subtitle">Date de paiement</div>
+                                    <div class="invoice__date bold">15 Février 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice__footer">
+                            <div class="invoice__text">Total à payer</div>
+                            <div class="invoice__text">4025.00€</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

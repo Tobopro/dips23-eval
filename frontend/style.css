@@ -1,0 +1,192 @@
+:root{
+    --color-bg : #F8F8FB;
+    --color-gray-dark: #373B53;
+    --color-gray-light: #7E88C3;
+    --color-red: #EC5757;
+    --color-purple: #7C5DFA;
+    --color-green: #33D69F;
+    --color-orange: #FF8F00;
+    --color-text: #0C0E16;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: var(--color-text);
+    line-height: 1.9;
+    background-color: var(--color-bg);
+  }
+
+  .container{
+    max-width: 118rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn{
+    background-color: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 2em;
+    cursor: pointer;
+  }
+
+  .btn--purple{
+    background-color: var(--color-purple);
+  }
+
+  .btn--purple:hover{
+    background-color: rgba(124, 93, 250, 0.784);
+  }
+
+  .btn--red{
+    background-color: var(--color-red);
+  }
+
+  .btn--red:hover{
+    background-color: rgba(236, 87, 87, 0.784);
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10rem;
+    width: 100%;
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .invoice-item{
+    background-color: #fff;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 2rem 0;
+  }
+
+  .invoice-item__id, .invoice-item__amount{
+    font-weight: bold;
+  }
+
+  .invoice-item__client{
+    color: var(--color-gray-light);
+  }
+
+  .invoice__status{
+    font-family: 1.3rem;
+    font-weight: bold;
+    padding: .5rem 2.5rem;
+    border-radius: .7rem;
+  }
+
+  .invoice__status--paid{
+    color: var(--color-green);
+    background-color: rgba(51, 214, 160, 0.093);
+  }
+
+  .invoice__status--pending{
+    color: var(--color-orange);
+    background-color: rgba(255, 145, 0, 0.093);
+  }
+
+  .invoice__actions{
+    background-color: #fff;
+    width: 65rem;
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 2rem 0;
+  }
+
+  .status{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .invoice__subtitle{
+    margin-right: 2rem;
+    color: var(--color-gray-light);
+    font-weight: bold;
+  }
+
+.wrapper{
+    background-color: #fff;
+    width: 65rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.invoice__header{
+    margin-bottom: 3rem;
+    padding: 3rem 0 0 4rem;
+}
+
+.invoice__infos{
+    padding: 0 4rem;
+}
+
+.text-30-b{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.invoice__title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-gray-light);
+}
+
+.invoice__infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.invoice__footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #373B53;
+    padding: 3rem 4rem;
+    margin-top: 3rem;
+}
+
+.invoice__text{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
